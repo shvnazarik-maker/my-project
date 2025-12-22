@@ -1,3 +1,5 @@
-body{
-    background-color: red;
-}
+@use "/src/components/fonts";
+@use "/src/components/variables";
+@use "/src/components/mixin";
+@use "/src/components/pallete_test";
+@use "/src/components/basic"
