@@ -1,0 +1,58 @@
+@use "/src/components/mixin" as mixin;
+@use "/src/components/variables" as styles;
+
+button.order-btn-fill,
+input.order-btn-fill
+{
+    @include mixin.button-fill(220px,styles.$pr-color-2);
+    @include mixin.font(styles.$font-semibold,14px,styles.$light);
+    text-transform: uppercase;
+}
+
+button.order-btn-fill:hover,
+input.order-btn-fill:hover
+{
+    background-color: styles.$light-1-pr2-color;
+    cursor: pointer;
+}
+button.order-btn-fill:disabled:hover,
+input.order-btn-fill:disabled:hover
+{
+    cursor:not-allowed;
+}
+button.order-btn-fill:disabled,
+input.order-btn-fill:disabled
+{
+   background-color: styles.$light-2-pr4-color;
+}
+
+/////////////
+
+button.primary-btn-outline,
+input.primary-btn-outline
+{
+    @include mixin.button-fill(200px,styles.$light, solid 1px styles.$dark-1-main-color);
+    @include mixin.font(styles.$font-medium,14px,styles.$dark-1-main-color);
+    text-transform: capitalize;
+}
+
+button.primary-btn-outline:hover,
+input.primary-btn-outline:hover
+{
+    background-color: styles.$light-2-main-color;
+    cursor: pointer;
+    border: none;
+    color:styles.$light;
+}
+button.primary-btn-outline:disabled:hover,
+input.primary-btn-outline:disabled:hover
+{
+    cursor:not-allowed;
+}
+button.primary-btn-outline:disabled,
+input.primary-btn-outline:disabled
+{
+   background-color: styles.$light-2-pr4-color;
+   border: none;
+   color:styles.$light;
+}

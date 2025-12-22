@@ -1,0 +1,41 @@
+// lighten($pr-main-color,40%);
+// darken($pr-main-color,20%);
+// colors base
+@use "sass:color";
+$pr-main-color: #03a9f4;
+$pr-color-2: #f75e2e;
+$pr-color-3: #ecfa4d;
+$pr-color-4: #656a70;
+$light:#fff;
+// lighten 
+$light-1-main-color: color.mix(#fff, $pr-main-color, 40%);
+$light-2-main-color: color.mix(#fff, $pr-main-color, 75%);
+$light-3-main-color: color.mix(#fff, $pr-main-color, 90%);
+
+$light-1-pr2-color: color.mix(#fff, $pr-color-2, 40%);
+$light-2-pr2-color: color.mix(#fff, $pr-color-2, 75%);
+$light-3-pr2-color: color.mix(#fff, $pr-color-2, 90%);
+
+$light-1-pr4-color: color.mix(#fff, $pr-color-4, 40%);
+$light-2-pr4-color: color.mix(#fff, $pr-color-4, 75%);
+$light-3-pr4-color: color.mix(#fff, $pr-color-4, 90%);
+
+// darken
+$dark-1-main-color: color.mix(#000, $pr-main-color, 20%);
+$dark-2-main-color: color.mix(#000, $pr-main-color, 50%);
+$dark-3-main-color: color.mix(#000, $pr-main-color, 70%);
+
+$dark-1-pr2-color: color.mix(#000, $pr-color-2, 20%);
+$dark-2-pr2-color: color.mix(#000, $pr-color-2, 50%);
+$dark-3-pr2-color: color.mix(#000, $pr-color-2, 70%);
+
+$dark-1-pr4-color: color.mix(#000, $pr-color-4, 20%);
+$dark-2-pr4-color: color.mix(#000, $pr-color-4, 50%);
+$dark-3-pr4-color: color.mix(#000, $pr-color-4, 70%);
+
+// fonts
+$font-regular: 'Poppins-Regular';
+$font-bold: 'Poppins-Bold';
+$font-medium: 'Poppins-Medium';
+$font-light: 'Poppins-Light';
+$font-semibold: 'Poppins-SemiBold';

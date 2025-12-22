@@ -1,0 +1,54 @@
+@use "/src/components/mixin" as mixin;
+@use "/src/components/variables" as styles;
+
+@use "/src/components/buttons";
+h1 {
+    @include mixin.font(styles.$font-bold, 35px, styles.$dark-3-pr4-color);
+    // padding-top: mixin.percent(1170,50);
+}
+
+h2 {
+    @include mixin.font(styles.$font-medium, 33px, styles.$dark-2-pr4-color);
+    // @extend %border;
+}
+
+h3 {
+    @include mixin.font(styles.$font-medium, 27px, styles.$dark-3-pr4-color);
+    // @extend %border;
+}
+// body{
+//     @include mixin.themes(false);
+// }
+
+ul.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li{
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &:before{
+            content:""; /*"\2605";*/
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: styles.$pr-main-color;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        &:after{
+            content: "";
+            display: block;
+            width: 5px;
+            height: 3px;
+            border: solid 1px #fff;
+            border-width: 0 0 2px 2px;
+            transform: rotate(-45deg);
+            position: absolute;
+            left: 4px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@mixin font($font,$size,$color)
+{
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+}
+
+@function percent($width,$offset)
+{
+    @return calc($offset/$width * 100%);
+}
+
+@mixin themes($lighten:true)
+{
+    @if $lighten{
+        background-color: lightpink;
+        color:black;
+    }
+    @else{
+        background-color: #000;
+        color:#fff;
+    }
+}
+
+%border{
+    border-style: solid;
+    border-color:green;
+    border-width: 3px;
+    padding: percent(1170,100);
+}
+@mixin button-fill($width, $bg, $border:none, $height:50px)
+{
+    width: $width;
+    background-color: $bg;
+    height: $height;
+    border: $border;
+}
