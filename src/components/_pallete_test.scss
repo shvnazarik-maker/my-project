@@ -433,6 +433,72 @@ h2 {
 }
 
 
+.tabs-wrapper {
+  max-width: 700px;
+}
+
+h2 {
+  margin-bottom: 25px;
+}
+
+.tabs input {
+  display: none;
+}
+
+.tabs-labels {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 12px;
+}
+
+.tabs-labels label {
+  cursor: pointer;
+  color: #999;
+  font-size: 14px;
+}
+
+.tabs-labels .underline {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 70px;
+  height: 4px;
+  background: #ff5a1f;
+  transition: 0.3s;
+}
+
+
+#tab1:checked ~ .tabs-labels label[for="tab1"],
+#tab2:checked ~ .tabs-labels label[for="tab2"],
+#tab3:checked ~ .tabs-labels label[for="tab3"],
+#tab4:checked ~ .tabs-labels label[for="tab4"] {
+  color: #000;
+}
+
+
+#tab1:checked ~ .tabs-labels .underline { left: 0; }
+#tab2:checked ~ .tabs-labels .underline { left: 110px; }
+#tab3:checked ~ .tabs-labels .underline { left: 220px; }
+#tab4:checked ~ .tabs-labels .underline { left: 330px; }
+
+.tabs-content {
+  margin-top: 25px;
+}
+
+.content {
+  display: none;
+  color: #333;
+}
+
+#tab1:checked ~ .tabs-content .c1,
+#tab2:checked ~ .tabs-content .c2,
+#tab3:checked ~ .tabs-content .c3,
+#tab4:checked ~ .tabs-content .c4 {
+  display: block;
+}
+
 
 h2 {
   margin-bottom: 40px;
@@ -559,3 +625,4 @@ h2 {
 .tw { }
 .pt { }
 .gp { }
+
