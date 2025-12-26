@@ -6,7 +6,29 @@ $pr-main-color: #03a9f4;
 $pr-color-2: #f75e2e;
 $pr-color-3: #ecfa4d;
 $pr-color-4: #656a70;
+
+$pr-color-5: #09a912;
+$pr-color-6: #f44747;
+$pr-color-7: #ffaa33;
+$pr-color-8: #21a5f8;
 $light:#fff;
+
+$pr-color-9:#0d6efd;
+$pr-color-10:#27ae60;
+$pr-color-11:#e74c3c;
+$pr-color-12:#cfcfcf;
+$pr-color-13:#f5f5f5;
+$pr-color-14:#e8f6ff;
+$pr-color-15:#ff5a1f;
+$pr-color-16:#0085c3;
+$pr-color-17:#007db8;
+$pr-color-18:#ff5a1f;
+$pr-color-19:#cceeff;
+$pr-color-20:#ffa78a;
+$pr-color-21:#ffa78a;
+$pr-color-22:#d9d9d9;
+
+
 // lighten 
 $light-1-main-color: color.mix(#fff, $pr-main-color, 40%);
 $light-2-main-color: color.mix(#fff, $pr-main-color, 75%);
@@ -20,6 +42,13 @@ $light-1-pr4-color: color.mix(#fff, $pr-color-4, 40%);
 $light-2-pr4-color: color.mix(#fff, $pr-color-4, 75%);
 $light-3-pr4-color: color.mix(#fff, $pr-color-4, 90%);
 
+
+$light-1-pr3-color: color.mix(#fff, $pr-color-3, 40%);
+$light-2-pr3-color: color.mix(#fff, $pr-color-3, 75%);
+$light-3-pr3-color: color.mix(#fff, $pr-color-3, 90%);
+
+
+
 // darken
 $dark-1-main-color: color.mix(#000, $pr-main-color, 20%);
 $dark-2-main-color: color.mix(#000, $pr-main-color, 50%);
@@ -32,6 +61,10 @@ $dark-3-pr2-color: color.mix(#000, $pr-color-2, 70%);
 $dark-1-pr4-color: color.mix(#000, $pr-color-4, 20%);
 $dark-2-pr4-color: color.mix(#000, $pr-color-4, 50%);
 $dark-3-pr4-color: color.mix(#000, $pr-color-4, 70%);
+
+$dark-1-pr3-color: color.mix(#000, $pr-color-3, 20%);
+$dark-2-pr3-color: color.mix(#000, $pr-color-3, 50%);
+$dark-3-pr3-color: color.mix(#000, $pr-color-3, 70%);
 
 // fonts
 $font-regular: 'Poppins-Regular';
